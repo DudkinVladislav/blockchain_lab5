@@ -12,7 +12,7 @@ contract Contract_Test {
     }
     
     function set(uint256 newValue) public {
-        uint256 oldValue = storedData;
+        uint256 oldValue = savedData;
         savedData = newValue;
         emit ValueChanged(oldValue, newValue, msg.sender);
     }
